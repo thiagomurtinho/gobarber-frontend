@@ -2,7 +2,7 @@ name: CI-GCS
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
 
 env:
   BUCKET: gobarber-frontend
@@ -28,7 +28,7 @@ jobs:
     - name: Build
       run: yarn build
     
-    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+    - uses: google-github-actions/setup-gcloud@master
       with:
         version: '290.0.1'
         project_id: ${{ secrets.GCP_PROJECT }}
