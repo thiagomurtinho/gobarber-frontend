@@ -2,7 +2,7 @@ name: CI-GCS
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 env:
   BUCKET: gobarber-frontend
